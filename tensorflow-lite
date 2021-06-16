@@ -1,0 +1,3 @@
+sudo python3 rpicam.py \
+  --model /home/pi/test/detect.tflite \
+  --labels /home/pi/test/coco_labels.txt
