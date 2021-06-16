@@ -3,7 +3,7 @@
 3) git clone https://github.com/tensorflow/examples.git --depth 1
 4) sudo mkdir /home/pi/test
 5) sudo chmod 775 /home/pi/test
-6) cd Downloads/tensorflow/
+6) cd Desktop/tensorflow/
 7) sudo mv rpicam.py /home/pi/examples/lite/examples/object_detection/raspberry_pi/
 8) cd /home/pi/examples/lite/examples/object_detection/raspberry_pi/
 9) sudo bash download.sh /home/pi/test
