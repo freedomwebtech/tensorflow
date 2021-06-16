@@ -4,6 +4,7 @@ sudo python3 rpicam.py \
 
 
 
+press ctrl+c for stop the command 
 
 
 After this command camera frame will be open and object detection will start 
