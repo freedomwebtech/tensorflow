@@ -10,4 +10,4 @@ cd /home/pi/tensorflow/
 sudo mv rpicam.py /home/pi/examples/lite/examples/object_detection/raspberry_pi/
 cd /home/pi/examples/lite/examples/object_detection/raspberry_pi/
 sudo bash download.sh /home/pi/test
-sudo mv /home/pi/tesnsorflow/tensorflow-lite /home/pi/Desktop
+
