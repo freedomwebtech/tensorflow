@@ -1,12 +1,15 @@
-1) git clone https://github.com/freedomwebtech/tensorflow.git
-2) https://www.tensorflow.org/lite/guide/python
-3) git clone https://github.com/tensorflow/examples.git --depth 1
-4) sudo mkdir /home/pi/test
-5) sudo chmod 775 /home/pi/test
-6) cd /home/pi/tensorflow/
-7) sudo mv rpicam.py /home/pi/examples/lite/examples/object_detection/raspberry_pi/
-8) cd /home/pi/examples/lite/examples/object_detection/raspberry_pi/
-9) sudo bash download.sh /home/pi/test
-10)sudo python3 rpicam.py \
+
+1) echo "deb https://packages.cloud.google.com/apt coral-edgetpu-stable main" | sudo tee /etc/apt/sources.list.d/coral-edgetpu.list
+2) curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+3) sudo apt-get update
+4) sudo apt-get install python3-tflite-runtime
+5) git clone https://github.com/tensorflow/examples.git --depth 1
+6) sudo mkdir /home/pi/test
+7) sudo chmod 775 /home/pi/test
+8) cd /home/pi/tensorflow/
+9) sudo mv rpicam.py /home/pi/examples/lite/examples/object_detection/raspberry_pi/
+10) cd /home/pi/examples/lite/examples/object_detection/raspberry_pi/
+11) sudo bash download.sh /home/pi/test
+12)sudo python3 rpicam.py \
   --model /home/pi/test/detect.tflite \
   --labels /home/pi/test/coco_labels.txt
