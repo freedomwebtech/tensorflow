@@ -32,7 +32,7 @@ import numpy as np
 from picamera import PiCamera
 
 camera = PiCamera()
-camera.resolution = (1020, 720)
+camera.resolution = (640, 480)
 camera.framerate = 32
 camera.rotation = 180
 camera.sharpness = 50
@@ -40,8 +40,8 @@ camera.brightness = 50
 from PIL import Image
 from tflite_runtime.interpreter import Interpreter
 
-CAMERA_WIDTH = 1020
-CAMERA_HEIGHT = 720
+CAMERA_WIDTH = 640
+CAMERA_HEIGHT = 480
 
 
 def load_labels(path):
